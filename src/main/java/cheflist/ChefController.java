@@ -28,15 +28,13 @@ public class ChefController {
 		// @ResponseBody means the returned String is the response, not a view name
 		// @RequestParam means it is a parameter from the GET or POST request
 
-	
-	//	model.addAttribute("cheff", new Chef());
-		
+				
 	    Chef c = new Chef();
 		c.setName(name);
 		c.setFood(food);
 		chefRepository.save(c);
 		
-		return "Saved";
+		return "ChefInput";
 		
 	}
 	
